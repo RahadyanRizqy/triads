@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Raga | Radyan | Manah</h1>
-    <a href="triads"><<</a>
+    <a href="/triads"><<</a>
 </body>
 </html>
