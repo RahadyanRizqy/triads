@@ -7,7 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Raga | Radyan | Manah</h1>
+    @php
+        $works = ['Raga', 'Radyan', 'Manah'];
+        $worksString = implode(' | ', $works);
+    @endphp
+    <h1>{{ $worksString }}</h1>
     <a href="/triads"><<</a>
 </body>
 </html>

@@ -9,10 +9,9 @@
 <body>
     @php
         $works = ['Katastrophe', 'Mayadin', 'Cynautic'];
+        $worksString = implode(' | ', $works);
     @endphp
-    @foreach ($works as $work)
-        <h1>{{ $work }}</h1>
-    @endforeach
-    <a href="triads"><<</a>
+    <h1>{{ $worksString }}</h1>
+    <a href="/triads"><<</a>
 </body>
 </html>
