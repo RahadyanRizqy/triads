@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/triads', function() { 
     return view('triads/first'); 
 });
+
+Route::get('/chars', function() {
+    return view('chars');
+});
+
+Route::get('/works', function() {
+    return view('works/list');
+});

@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is just a beginning...</h1>
-    <h3> <a href="chars">Chars</a> | <a href="works">Works</a> | <a href="/">Home</a> </h3>
+    <h1>Shows three</h1>
 </body>
 </html>

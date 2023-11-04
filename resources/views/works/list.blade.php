@@ -7,7 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is just a beginning...</h1>
-    <h3> <a href="chars">Chars</a> | <a href="works">Works</a> | <a href="/">Home</a> </h3>
+    @php
+        $works = ['Katastrophe', 'Mayadin', 'Cynautic'];
+    @endphp
+    @foreach ($works as $work)
+        <h1>{{ $work }}</h1>
+    @endforeach
+    <a href="triads"><<</a>
 </body>
 </html>

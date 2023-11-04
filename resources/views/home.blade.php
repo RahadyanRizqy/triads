@@ -72,7 +72,7 @@
             <p class="medium" align="justify">
                 <i>
                 "Thinking begets thought, thought begets further thinking. The same applied to overthinking and overthought. Yet, my thoughts are scattered, it's time to compile them." -Triads.
-                </i> <a href="/triads/">>></a>
+                </i> <a href="triads">>></a>
             </p>
         </div>
         <p class="text-center medium">owner: <a class="text-decoration-none" href="https://instagram.com/rdn_rzq">@rdn_rzq</a></p>
