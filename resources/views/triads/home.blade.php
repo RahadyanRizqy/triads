@@ -107,7 +107,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 25vh;
+            height: 35vh;
             padding-left: 25px;
             padding-right: 25px;
         }
