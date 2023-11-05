@@ -94,7 +94,7 @@
             /* margin-top: 25px; */
             padding-left: 25px;
             padding-right: 25px;
-            height: 30vh;
+            height: 25vh;
         }
         
         .whoami-container {
