@@ -99,7 +99,7 @@
 
         .en-prologue, .id-prologue {
             width: 100%;
-            height: 150px;
+            height: auto;
         }
 
         .flex-container {
