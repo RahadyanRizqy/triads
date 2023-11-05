@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('triads/home');
 });
 
 Route::get('/triads', function() { 
@@ -22,9 +22,9 @@ Route::get('/triads', function() {
 });
 
 Route::get('/chars', function() {
-    return view('chars');
+    return view('triads/chars');
 });
 
 Route::get('/works', function() {
-    return view('works/list');
+    return view('triads/works');
 });
