@@ -39,23 +39,6 @@
         font-size: 25px;
     }
 
-    @media (max-width: 600px) {
-        .big {
-            font-size: 35px;
-        }
-
-        .medium {
-            font-size: 15px;
-        }
-
-        .flex-container {
-            /* margin-top: 25px; */
-            padding-left: 25px;
-            padding-right: 25px;
-            height: 35vh;
-        }
-    }
-
     a {
         color: #03a9f4;
     }
@@ -74,10 +57,62 @@
 
     .whoami-container {
         position: fixed;
-        bottom: 40%;
+        bottom: 36%;
         z-index: 9999;
         left: 50%;
         transform: translateX(-50%);    
+    }
+
+    .to-the-triads {
+        position: fixed;
+        bottom: 43%;
+        z-index: 9999;
+        left: 50%;
+        transform: translateX(-50%);    
+    }
+
+    .to-the-triads a {
+        height: 25px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 12px; */
+        padding: 0px 0px 5px 0px;
+    }
+
+    @media (max-width: 600px) {
+        .big {
+            font-size: 35px;
+        }
+
+        .medium {
+            font-size: 15px;
+        }
+
+        .flex-container {
+            /* margin-top: 25px; */
+            padding-left: 25px;
+            padding-right: 25px;
+            height: 35vh;
+        }
+        
+        .whoami-container {
+            position: fixed;
+            bottom: 63%;
+            z-index: 9999;
+            left: 50%;
+            width: 95%;
+            transform: translateX(-50%);    
+        }
+
+        .to-the-triads {
+            position: fixed;
+            bottom: 70%;
+            z-index: 9999;
+            left: 50%;
+            transform: translateX(-50%);    
+        }
     }
 </style>
 <style>
@@ -87,14 +122,22 @@
         font-family: 'JetBrains Mono', monospace;
         /* font-family: 'Poppins', sans-serif; */
     }
+
+    @media (max-width: 600px) {
+        .tty {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+        /* font-family: 'Poppins', sans-serif; */
+        }
+    }
 </style>
 @endpush
 
 @section('content')
 <div class="flex-container">
     @php
-        $res_en = '<p class="medium" align="justify"><i>"Thinking begets thought, thought begets further thinking. The same applied to overthinking and overthought. Yet, my thoughts are scattered, it\'s time to compile them." -Triads. </i><a href="/triads">>></a></p>';
-        $res_id = '<p class="medium" align="justify"><i>"Berpikir menghasilkan pemikiran, pemikiran mendorong \'tuk berpikir lebih dalam. Sama halnya dengan berpikir berlebihan dan pemikiran berlebihan. Namun, pemikiranku tercerai-berai, maka inilah saatnya \'tuk menyatukannya." -Triads. </i><a href="/triads">>></a></p>';
+        $res_en = '<p class="text-center medium" align="justify"><i>"Thinking begets thought, thought begets further thinking. The same applied to overthinking and overthought. Yet, my thoughts are scattered, it\'s time to compile them." -Triads. </i></p>';
+        $res_id = '<p class="text-center medium" align="justify"><i>"Berpikir menghasilkan pemikiran, pemikiran mendorong \'tuk berpikir lebih dalam. Sama halnya dengan berpikir berlebihan dan pemikiran berlebihan. Namun, pemikiranku tercerai-berai, maka inilah saatnya \'tuk menyatukannya." -Triads. </i></p>';
     @endphp
     <div>
         <div class="en-prologue">
@@ -102,6 +145,9 @@
         </div>
         <div class="id-prologue d-none">
             {!! $res_id !!}
+        </div>
+        <div class="to-the-triads">
+            <a href="/triads" class="btn btn-dark"> >> </a>
         </div>
         <div class="btn-group d-flex justify-content-center flex-row">
             <div class="button id-button">
