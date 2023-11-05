@@ -57,10 +57,10 @@
 
     .en-prologue, .id-prologue {
         width: 100%;
-        height: 150px;
+        height: auto;
     }
 
-    @media (max-width: 1021px) {
+    /* @media (max-width: 1021px) {
         .en-prologue, .id-prologue {
             width: 100%;
             height: 190px;
@@ -86,22 +86,7 @@
             width: 100%;
             height: 310px;
         }
-    }
-
-    @media (max-width: 600px) {
-        .big {
-            font-size: 35px;
-        }
-
-        .medium {
-            font-size: 15px;
-        }
-
-        .en-prologue, .id-prologue {
-            width: 100%;
-            height: 150px;
-        }
-    }
+    } */
 
     @media (max-width: 600px) {
         .big {
