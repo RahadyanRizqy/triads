@@ -99,7 +99,7 @@
 
         .en-prologue, .id-prologue {
             width: 100%;
-            min-height: 103px;
+            min-height: 175px;
         }
 
         .flex-container {
@@ -110,10 +110,6 @@
             height: 35vh;
             padding-left: 25px;
             padding-right: 25px;
-        }
-
-        .whoami-container {
-            padding: 0;
         }
     }
 
