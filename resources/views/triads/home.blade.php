@@ -26,7 +26,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 90vh;
+        height: 95vh;
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -55,30 +55,37 @@
         width: 50px;
     }
 
-    .whoami-container {
-        position: fixed;
-        bottom: 36%;
-        z-index: 9999;
-        left: 50%;
-        transform: translateX(-50%);    
+    .en-prologue, .id-prologue {
+        width: 100%;
+        height: 150px;
     }
 
-    .to-the-triads {
-        position: fixed;
-        bottom: 43%;
-        z-index: 9999;
-        left: 50%;
-        transform: translateX(-50%);    
+    @media (max-width: 1021px) {
+        .en-prologue, .id-prologue {
+            width: 100%;
+            height: 190px;
+        }
     }
 
-    .to-the-triads a {
-        height: 25px;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* font-size: 12px; */
-        padding: 0px 0px 5px 0px;
+    @media (max-width: 869px) {
+        .en-prologue, .id-prologue {
+            width: 100%;
+            height: 230px;
+        }
+    }
+
+    @media (max-width: 748px) {
+        .en-prologue, .id-prologue {
+            width: 100%;
+            height: 270px;
+        }
+    }
+
+    @media (max-width: 681px) {
+        .en-prologue, .id-prologue {
+            width: 100%;
+            height: 310px;
+        }
     }
 
     @media (max-width: 600px) {
@@ -90,29 +97,44 @@
             font-size: 15px;
         }
 
-        .flex-container {
-            /* margin-top: 25px; */
-            padding-left: 25px;
-            padding-right: 25px;
-            height: 25vh;
+        .en-prologue, .id-prologue {
+            width: 100%;
+            height: 150px;
         }
-        
-        .whoami-container {
-            position: fixed;
-            bottom: 63%;
-            z-index: 9999;
-            left: 50%;
-            width: 95%;
-            transform: translateX(-50%);    
+    }
+
+    @media (max-width: 600px) {
+        .big {
+            font-size: 35px;
         }
 
-        .to-the-triads {
-            position: fixed;
-            bottom: 70%;
-            z-index: 9999;
-            left: 50%;
-            transform: translateX(-50%);    
+        .medium {
+            font-size: 15px;
         }
+
+        .en-prologue, .id-prologue {
+            width: 100%;
+            height: 150px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 35vh;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
+    .to-the-triads a {
+        height: 25px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
     }
 </style>
 <style>
@@ -139,27 +161,27 @@
         $res_en = '<p class="text-center medium" align="justify"><i>"Thinking begets thought, thought begets further thinking. The same applied to overthinking and overthought. Yet, my thoughts are scattered, it\'s time to compile them." -Triads. </i></p>';
         $res_id = '<p class="text-center medium" align="justify"><i>"Berpikir menghasilkan pemikiran, pemikiran mendorong \'tuk berpikir lebih dalam. Sama halnya dengan berpikir berlebihan dan pemikiran berlebihan. Namun, pemikiranku tercerai-berai, maka inilah saatnya \'tuk menyatukannya." -Triads. </i></p>';
     @endphp
-    <div>
+    <div class="main-container d-flex flex-column">
         <div class="en-prologue">
             {!! $res_en !!}
         </div>
         <div class="id-prologue d-none">
             {!! $res_id !!}
         </div>
-        <div class="to-the-triads">
+        <div class="to-the-triads d-flex justify-content-center">
             <a href="/triads" class="btn btn-dark"> >> </a>
         </div>
-        <div class="btn-group d-flex justify-content-center flex-row">
-            <div class="button id-button">
-                <button class="btn btn-primary mx-1 id-btn opacity-50" id="id-btn">ID</button>
-            </div>
-            <div class="button en-button">
-                <button class="btn btn-danger mx-1 en-btn" id="en-btn">EN</button>
-            </div>
+        <div class="whoami-container">
+            <p class="text-center tty">triads@ub-102-id-jv1-dc-rdnet-id~# <a class="text-decoration-none" href="https://instagram.com/rdn_rzq">whoami</a></p>
         </div>
     </div>
-    <div class="whoami-container">
-        <p class="text-center tty">triads@ub-102-id-jv1-dc-rdnet-id~# <a class="text-decoration-none" href="https://instagram.com/rdn_rzq">whoami</a></p>
+    <div class="btn-group d-flex justify-content-center flex-row">
+        <div class="button id-button">
+            <button class="btn btn-primary mx-1 id-btn opacity-50" id="id-btn">ID</button>
+        </div>
+        <div class="button en-button">
+            <button class="btn btn-danger mx-1 en-btn" id="en-btn">EN</button>
+        </div>
     </div>
 </div>
 @endsection
