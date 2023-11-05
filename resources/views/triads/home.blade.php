@@ -57,7 +57,7 @@
 
     .en-prologue, .id-prologue {
         width: 100%;
-        height: auto;
+        min-height: 153px;
     }
 
     /* @media (max-width: 1021px) {
@@ -99,7 +99,7 @@
 
         .en-prologue, .id-prologue {
             width: 100%;
-            height: auto;
+            min-height: 103px;
         }
 
         .flex-container {
@@ -107,7 +107,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 35vh;
+            height: 25vh;
             padding-left: 25px;
             padding-right: 25px;
         }
