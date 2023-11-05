@@ -111,6 +111,10 @@
             padding-left: 25px;
             padding-right: 25px;
         }
+
+        .whoami-container {
+            padding: 0;
+        }
     }
 
     .to-the-triads a {
