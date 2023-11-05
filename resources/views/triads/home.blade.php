@@ -144,7 +144,7 @@
 <div class="flex-container">
     @php
         $res_en = '<p class="text-center medium" align="justify"><i>"Thinking begets thought, thought begets further thinking. The same applied to overthinking and overthought. Alas, thoughts are scattered, it\'s time to compile them." -Triads. </i></p>';
-        $res_id = '<p class="text-center medium" align="justify"><i>"Olah pikir lahirkan pemikiran, pemikiran dorong \'tuk berpikir lebih. Jua berlaku pada keduanya yang berlebihan. Sayang, semua itu tercerai-berai, maka inilah saatnya \'tuk menyatukannya." -Triads. </i></p>';
+        $res_id = '<p class="text-center medium" align="justify"><i>"Olah pikir lahirkan pemikiran, pemikiran dorong \'tuk berpikir lebih. Jua berlaku pada keduanya, bila berlebihan. Sayang, semua itu tercerai-berai, maka inilah saatnya \'tuk menyatukannya." -Triads. </i></p>';
     @endphp
     <div class="main-container d-flex flex-column">
         <div class="en-prologue">
