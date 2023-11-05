@@ -26,7 +26,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 90vh;
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -52,7 +52,7 @@
             /* margin-top: 25px; */
             padding-left: 25px;
             padding-right: 25px;
-            height: 25vh;
+            height: 35vh;
         }
     }
 
@@ -60,52 +60,33 @@
         color: #03a9f4;
     }
 
-    .language-switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
+    .btn-group {
+        position: fixed;
+        bottom: 5%;
+        z-index: 9999;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
-.language-switch input {
-    display: none;
-}
+    .button button {
+        width: 50px;
+    }
 
-.language-switch label {
-    background-color: #ccc;
-    border-radius: 34px;
-    display: block;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    transition: 0.4s;
-    width: 60px;
-    height: 34px;
-}
+    .whoami-container {
+        position: fixed;
+        bottom: 40%;
+        z-index: 9999;
+        left: 50%;
+        transform: translateX(-50%);    
+    }
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Poppins&display=swap');
 
-.language-switch label:after {
-    content: "";
-    border-radius: 50%;
-    background-color: #fff;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    transition: 0.4s;
-    width: 26px;
-    height: 26px;
-}
-
-.language-switch input:checked + label {
-    background-color: #2196F3;
-}
-
-.language-switch input:checked + label:after {
-    left: calc(100% - 26px);
-    transform: translate(-50%, -50%);
-}
-
+    .tty {
+        font-family: 'JetBrains Mono', monospace;
+        /* font-family: 'Poppins', sans-serif; */
+    }
 </style>
 @endpush
 
@@ -122,16 +103,18 @@
         <div class="id-prologue d-none">
             {!! $res_id !!}
         </div>
-        <div class="d-flex justify-content-center flex-row">
-            <div class="button">
-                <button class="btn btn-primary mx-1 opacity-50" id="id-btn">ID</button>
+        <div class="btn-group d-flex justify-content-center flex-row">
+            <div class="button id-button">
+                <button class="btn btn-primary mx-1 id-btn opacity-50" id="id-btn">ID</button>
             </div>
-            <div class="button">
-                <button class="btn btn-danger mx-1" id="en-btn">EN</button>
+            <div class="button en-button">
+                <button class="btn btn-danger mx-1 en-btn" id="en-btn">EN</button>
             </div>
         </div>
     </div>
-    <p class="text-center medium">owner: <a class="text-decoration-none" href="https://instagram.com/rdn_rzq">@rdn_rzq</a></p>
+    <div class="whoami-container">
+        <p class="text-center tty">triads@ub-102-id-jv1-dc-rdnet-id~# <a class="text-decoration-none" href="https://instagram.com/rdn_rzq">whoami</a></p>
+    </div>
 </div>
 @endsection
 @push('scripts')

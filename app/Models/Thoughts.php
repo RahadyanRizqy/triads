@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Thoughts extends Model
 {
     use HasFactory;
+
+    protected $guarded = [
+        'id'
+    ];
+
 }

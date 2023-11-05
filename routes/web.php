@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ThoughtController;
+use App\Models\Thoughts;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,3 +30,6 @@ Route::get('/chars', function() {
 Route::get('/works', function() {
     return view('triads/works');
 });
+
+// Route::get('/triads/add', [ThoughtController::class, 'index']);
+// Route::post('/triads/add', [ThoughtsController::class, 'store']);
